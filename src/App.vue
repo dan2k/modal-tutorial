@@ -30,7 +30,7 @@ const openOverview = () => {
         <span class="mx-4"></span>
         <button @click="openOverview">Open Overview Modal</button>
       </div>
-      <div class="absolute top-20 bg-red-500 p-2 w-full left-0">This will make things ugly x</div>
+      <div class="absolute top-20 bg-red-500 p-2 w-full left-0">This will make things ugly</div>
 </template>
 
 <style scoped>
