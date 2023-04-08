@@ -1,0 +1,17 @@
+{
+    "name": "vue-app",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"Vue.volar",
+				"Vue.vscode-typescript-vue-plugin"
+			]
+		}
+	},
+}
