@@ -4,5 +4,12 @@
         "./docker-compose.yml"
     ],
     "service": "app",
-    "workspaceFolder": "/app",
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
 }
