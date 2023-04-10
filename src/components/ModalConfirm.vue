@@ -13,8 +13,8 @@
           <h3>Do you confirm?</h3>
           <div class="flex justify-center py-4 text-white">
                 <!-- We will handle these emits later -->
-	            <button @click="$emit('close')" class="border border-black bg-white text-black mr-4">No</button>
-              <button @click="$emit('close')">Yes</button>
+	            <button @click="$emit('close',false)" class="border border-black bg-white text-black mr-4">No</button>
+              <button @click="$emit('close',true)">Yes</button>
           </div>
         </div>
       </div>

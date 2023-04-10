@@ -4,6 +4,7 @@ import { ref } from 'vue'
 const component = ref();
 // keep track of whether to show modal
 const show = ref(false);
+const result=ref(null)
 
 export function useModal() {
     return {

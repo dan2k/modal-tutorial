@@ -9,6 +9,7 @@ const modal = useModal();
 
 const openConfirm = () => {
   modal.component.value = markRaw(ModalConfirm);
+  // modal.component.value = ModalConfirm;
   modal.showModal();
 };
 
@@ -16,14 +17,18 @@ const openOverview = () => {
   modal.component.value = markRaw(ModalOverview);
   modal.showModal();
 };
-
+const close=(rs:boolean)=>{
+  console.log(rs)
+  modal.hideModal()
+}
 </script>
 
 <template>
       <div class="flex justify-center items-center min-h-screen">
         <Teleport to="#modal">
           <Transition>
-            <component :is="modal.component.value" v-if="modal.show.value" @close="modal.hideModal"/>
+            <!-- <component :is="modal.component.value" v-if="modal.show.value" @close="modal.hideModal"/> -->
+            <component :is="modal.component.value" v-if="modal.show.value" @close="close"/>
           </Transition>
         </Teleport>
         <button @click="openConfirm">Open Confirm Modal</button>
